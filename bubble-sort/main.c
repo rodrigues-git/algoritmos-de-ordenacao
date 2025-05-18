@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include "header.h"
+#include <stdlib.h>
 
 int main(){
 
@@ -16,21 +16,13 @@ int main(){
     for(int ii = 0; ii < n; ii++){
         printf("V[%d] = ", ii+1);
         scanf("%d", &v[ii]);
-
     }
 
     int* ptr = v;
-    int resul = 0;
+    
+    bubble_sort(ptr, n);
 
-    resul = ordenada(ptr, n);
-
-    if(resul){
-        printf("A lista esta ordenada! \n");
-    }
-
-    else{
-        printf("A lista esta desordenada! \n");
-    }
+    printar(ptr, n);
 
     system("pause");
 

@@ -1,0 +1,1 @@
+int ordenada(int* v, int n);
